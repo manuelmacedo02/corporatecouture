@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corporate Couture: The High-heeled Hustle</title>
+    <style>
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #8a3ab9;
+            text-align: center;
+        }
+        p {
+            line-height: 1.6;
+        }
+        .section {
+            margin-bottom: 30px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .tab {
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+        }
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+            font-size: 17px;
+        }
+        .tab button:hover {
+            background-color: #ddd;
+        }
+        .tab button.active {
+            background-color: #ccc;
+        }
+        .tabcontent {
+            display: none;
+            padding: 6px 12px;
+            border: 1px solid #ccc;
+            border-top: none;
+        }
+        .image-container {
+            text-align: center;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            margin: 10px 0;
+        }
+    </style>
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Corporate Couture: The High-heeled Hustle</h1>
+        
+        <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'Premise')">Premise</button>
+            <button class="tablinks" onclick="openTab(event, 'Rules')">Rules</button>
+            <button class="tablinks" onclick="openTab(event, 'Characters')">Characters</button>
+        </div>
+        
+        <div id="Premise" class="tabcontent">
+            <div class="section">
+                <h2>Premise of the Game</h2>
+                <p>Young interns enter the workplace for the first time, encountering problems, challenges, opportunities, benefits, and navigating the circumstances they are put in.</p>
+                <p>The game can be adapted to suit any of the end goals (e.g., celebrity stylist's assistant).</p>
+            </div>
+        </div>
+
+        <div id="Rules" class="tabcontent">
+            <div class="section">
+                <h2>Objective</h2>
+                <p>The objective of Corporate Couture is to be the first player to reach the "Job Offer" space at the end of the board, symbolizing successful job attainment, based on a degree of luck, but also using your knowledge to take advantage of opportunity card boosters.</p>
+            </div>
+            <div class="section">
+                <h2>Setup</h2>
+                <p>Each player draws a character figurine, each with pre-set personalities and life situations that may dictate how their wheel moves count.</p>
+                <p>Set up the game board, which is laid out with spaces leading from "Start" to "Job Offer."</p>
+                <p>Shuffle and place the Activity Cards and Opportunity Cards in designated piles on the board.</p>
+            </div>
+            <div class="section">
+                <h2>Game Play</h2>
+                <p>Players take turns spinning the wheel to move forward on the board. The number may multiply depending on who the character is.</p>
+                <p>If a player lands on an Activity Space, they draw an Activity Card which could either advance or set them back based on realistic work-related scenarios; these cards can affect other players' game status as well.</p>
+                <p>Landing on an Opportunity Space allows players to answer the question written on it. This question is read by another player. Answering correctly lets the player move up two additional spaces.</p>
+            </div>
+            <div class="section">
+                <h2>Winning the Game</h2>
+                <p>The first player to land on the "Job Offer" space wins the game.</p>
+            </div>
+            <div class="section">
+            <div class="section">
+                <h2>How the Game Works</h2>
+                <ul>
+                    <li><strong>Starting the Game:</strong> Players pick out figurines to navigate the board from a dustbag and get assigned their random characters. The "Nepotism baby" player starts each round. If "Nepotism Baby" is not drawn, all players spin a wheel, and the highest scorer goes first, with the order proceeding clockwise.</li>
+                    <li><strong>Movement:</strong> Players move by spinning the wheels. If a player gets the "Nepotism baby" figurine, their movement is always doubled throughout the game.</li>
+                    <li><strong>Gameplay Interactions:</strong> Players may land on spaces that allow them to pick up "Opportunity" or "Activity" cards. Actions from different players can affect others' positions on the board, mirroring real-world industry dynamics.</li>
+                    <li><strong>Winning the Game:</strong> To win, a player must have at least one "Opportunity" card. Players must land exactly on the finish line to win. If a player is near the finish line but cannot land exactly on it on their round, they must continue around the board. A player can also win if they land on an "Activity" card space that moves them directly onto the finish line, even if the move is not exact.</li>
+                    <li><strong>Board Navigation:</strong> The board does not have a pre-set direction for spaces, allowing for nonlinear progression.</li>
+                </ul>
+            </div>
+        </div>
+                <div id="Characters" class="tabcontent">
+            <div class="section">
+                <h2>Characters</h2>
+                <ul>
+                    <li><strong>Nepotism Baby:</strong> Born in Paris, went to boarding school in Switzerland. Just graduated from a Fashion school in Paris, doing a Masters in Luxury Brand Management. Wants to become the CEO of a big corporate company in the fashion industry. No work experience. Addicted to shopping.</li>
+                    <li><strong>Fashion Nerd:</strong> Went to a renowned public school in New Zealand. Got a scholarship due to exceptional school grades for a Business Management degree. Dreams of being Head of PR at LVMH. Has worked in retail since she was 17 years old. Spends her nights watching different fashion shows from the past years.</li>
+                    <li><strong>Business Gal:</strong> Went to a private school in San Francisco. Went to college in Boston. Wants to build a life in Europe, working in Marketing. Worked in a small boutique in Boston for 2 years as a social media manager. Goes to the gym or enjoys a cocktail night with her friends.</li>
+                    <li><strong>Marketing Guy:</strong> Born and educated in Antwerpen, Belgium. Has a Masters degree in International Business Law. Wants to become rich. Worked at the Bank of Liechtenstein for a year. Interested in the stock market and the luxury market. Spends his weekends watching or playing football with his friends.</li>
+                    <li><strong>Creative Student:</strong> From Florence, Italy, and attended a private high school. Got a creativity scholarship for a prestigious fashion school in London. Wants to become Creative Director or Designer at a premium or high-end brand. Worked as an intern for a pattern maker and designer in London. Spends her afternoons working on paintings and designs and has a big interest in interior design.</li>
+                    <li><strong>The Gay:</strong> Born in Spain, raised in Madrid. Attended a private school and graduated with a Masters degree in Art Direction & Design Management. Wants to work in Social Media, PR, or Event Management at a fashion-related company. Worked at Zara for 3 years and did an internship as Social Media Manager for a boutique that belongs to his parents' friend. Spends his summers with his friends in Marbella.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="image-container">
+            <img src="https://example.com/fashion-game-board.jpg" alt="Game Board">
+            <img src="https://example.com/fashion-game-cards.jpg" alt="Game Cards">
+            <img src="https://example.com/fashion-figures.jpg" alt="Game Figures">
+        </div>
+    </div>
+</body>
+</html>
