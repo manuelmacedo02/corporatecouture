@@ -72,27 +72,31 @@
             var i, tabcontent, tablinks;
             tabcontent = document.getElementsByClassName("tabcontent");
             for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
+                tabcontent[i].style.display = "none";  // Hide all tab content
             }
             tablinks = document.getElementsByClassName("tablinks");
             for (i = 0; i < tablinks.length; i++) {
                 tablinks[i].className = tablinks[i].className.replace(" active", "");
             }
-            document.getElementById(tabName).style.display = "block";
-            evt.currentTarget.className += " active";
+            document.getElementById(tabName).style.display = "block";  // Show the current tab
+            evt.currentTarget.className += " active";  // Set the current tab as active
         }
+        // Ensuring the first tab is displayed when page loads
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("defaultOpen").click();
+        });
     </script>
 </head>
 <body>
     <div class="container">
         <h1>Corporate Couture: The High-heeled Hustle</h1>
-        
+
         <div class="tab">
-            <button class="tablinks" onclick="openTab(event, 'Premise')">Premise</button>
+            <button class="tablinks" onclick="openTab(event, 'Premise')" id="defaultOpen">Premise</button>
             <button class="tablinks" onclick="openTab(event, 'Rules')">Rules</button>
             <button class="tablinks" onclick="openTab(event, 'Characters')">Characters</button>
         </div>
-        
+
         <div id="Premise" class="tabcontent">
             <div class="section">
                 <h2>Premise of the Game</h2>
@@ -106,35 +110,7 @@
                 <h2>Objective</h2>
                 <p>The objective of Corporate Couture is to be the first player to reach the "Job Offer" space at the end of the board, symbolizing successful job attainment, based on a degree of luck, but also using your knowledge to take advantage of opportunity card boosters.</p>
             </div>
-            <div class="section">
-                <h2>Setup</h2>
-                <p>Each player draws a character figurine, each with pre-set personalities and life situations that may dictate how their wheel moves count.</p>
-                <p>Set up the game board, which is laid out with spaces leading from "Start" to "Job Offer."</p>
-                <p>Shuffle and place the Activity Cards and Opportunity Cards in designated piles on the board.</p>
-            </div>
-            <div class="section">
-                <h2>Game Play</h2>
-                <p>Players take turns spinning the wheel to move forward on the board. The number may multiply depending on who the character is.</p>
-                <p>If a player lands on an Activity Space, they draw an Activity Card which could either advance or set them back based on realistic work-related scenarios; these cards can affect other players' game status as well.</p>
-                <p>Landing on an Opportunity Space allows players to answer the question written on it. This question is read by another player. Answering correctly lets the player move up two additional spaces.</p>
-            </div>
-            <div class="section">
-                <h2>Winning the Game</h2>
-                <p>The first player to land on the "Job Offer" space wins the game.</p>
-            </div>
-            <div class="section">
-            <div class="section">
-                <h2>How the Game Works</h2>
-                <ul>
-                    <li><strong>Starting the Game:</strong> Players pick out figurines to navigate the board from a dustbag and get assigned their random characters. The "Nepotism baby" player starts each round. If "Nepotism Baby" is not drawn, all players spin a wheel, and the highest scorer goes first, with the order proceeding clockwise.</li>
-                    <li><strong>Movement:</strong> Players move by spinning the wheels. If a player gets the "Nepotism baby" figurine, their movement is always doubled throughout the game.</li>
-                    <li><strong>Gameplay Interactions:</strong> Players may land on spaces that allow them to pick up "Opportunity" or "Activity" cards. Actions from different players can affect others' positions on the board, mirroring real-world industry dynamics.</li>
-                    <li><strong>Winning the Game:</strong> To win, a player must have at least one "Opportunity" card. Players must land exactly on the finish line to win. If a player is near the finish line but cannot land exactly on it on their round, they must continue around the board. A player can also win if they land on an "Activity" card space that moves them directly onto the finish line, even if the move is not exact.</li>
-                    <li><strong>Board Navigation:</strong> The board does not have a pre-set direction for spaces, allowing for nonlinear progression.</li>
-                </ul>
-            </div>
-        </div>
-                <div id="Characters" class="tabcontent">
+        </div        <div id="Characters" class="tabcontent">
             <div class="section">
                 <h2>Characters</h2>
                 <ul>
@@ -154,5 +130,13 @@
             <img src="https://example.com/fashion-figures.jpg" alt="Game Figures">
         </div>
     </div>
+
+    <script>
+        // Default open on page load
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById('defaultOpen').click();
+        });
+    </script>
 </body>
 </html>
+
